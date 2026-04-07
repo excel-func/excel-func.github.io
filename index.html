@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -17,7 +18,7 @@
             margin: 0;
             color: #333;
         }
-
+        
         h1 {
             font-size: 3.5rem;
             margin-bottom: 30px;
@@ -26,38 +27,62 @@
             letter-spacing: 2px;
             text-align: center;
         }
-
+        
         .links-container {
             display: flex;
             gap: 20px;
             margin-bottom: 20px;
         }
-
+        
         .compiler-link {
             text-decoration: none;
             color: white;
-            background-color: #3498db;
+            background-color: black;
             padding: 15px 30px;
             border-radius: 8px;
             font-weight: bold;
             transition: all 0.3s ease;
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
         }
-
+        
         .compiler-link:hover {
             background-color: #2980b9;
             transform: translateY(-3px);
             box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
         }
-
+        
         .python-link {
-            background-color: #2ecc71;
+            background-color: dodgerblue;
         }
-
+        
+        .excel-link {
+            background-color: green;
+        }
+        
+        .cpp-link {
+            background-color: #0b5cff;
+        }
+        
+        .html-link {
+            background-color: orange;
+        }
+        
+        .html-link:hover {
+            background-color: red;
+        }
+        
         .python-link:hover {
-            background-color: #27ae60;
+            background-color: blue;
         }
-
+        
+        .cpp-link:hover {
+            background-color: #00eaffdc;
+        }
+        
+        .excel-link:hover {
+            background-color: darkgreen;
+        }
+        
         .footer-text {
             font-size: 0.9rem;
             color: #7f8c8d;
@@ -66,17 +91,22 @@
         }
     </style>
 </head>
+
 <body>
 
     <h1>Abdurayim Compilers</h1>
 
     <div class="links-container">
-        <a href="/html/" class="compiler-link">HTML Compiler</a>
+        <a href="/html/" class="compiler-link html-link">HTML Compiler</a>
         <a href="/python/" class="compiler-link python-link">Python Compiler</a>
-        <a href="/excel/" class="compiler-link">Download excel functions</a>
+        <a href="/cpp/" class="compiler-link cpp-link">C++ Compiler</a>
     </div>
+    <div class="links-container">
+        <a href="/excel/" class="compiler-link excel-link">excel functions</a>
 
+    </div>
     <p class="footer-text">another compilers coming soon</p>
 
 </body>
+
 </html>
